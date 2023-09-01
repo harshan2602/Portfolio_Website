@@ -741,22 +741,22 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 form">
-                        <form name="submit-to-google-sheet">
+                        <form onsubmit="sendEmail(); reset(); return false;">
                             <div class="form-item">
                                 <label>Name</label>
-                                <input type="text" name="name" required>
+                                <input type="text" name="name" id="name" required>
                             </div>
                             <div class="form-item">
                                 <label>Email</label>
-                                <input type="email" name="email" required>
+                                <input type="email" name="email" id="email" required>
                             </div>
                             <div class="form-item">
                                 <label>Subject</label>
-                                <input type="text" name="subject">
+                                <input type="text" name="subject" id="subject">
                             </div>
                             <div class="form-item">
                                 <label>Message</label>
-                                <textarea name="message"></textarea>
+                                <textarea name="message" id="message"></textarea>
                             </div>
                             <div class="text-end">
                                 <button type="submit" class="btn-custom-dark">Send message</button>
@@ -845,9 +845,28 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/script.js"></script>
 
+    <!-- CONTACT FORM TO EMAIL -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                SecureToken : "f44f4b9b-cc6e-49f3-a12a-81213556ec85",
+                To : 'harshan2602@gmail.com',
+                From : 'harshan2602@gmail.com',
+                Subject : "New Contact Form Enquiry",
+                Body : "Name : " + document.getElementById("name").value
+                +"<br> Email : " + document.getElementById("email").value
+                +"<br> Subject : " + document.getElementById("subject").value
+                +"<br> Message : " + document.getElementById("message").value
+            }).then(
+            message => alert("Message Sent Sucessfully")
+            );
+        }
+    </script>
+
     <!---------- CONTACT FORM TO GOOGLE SHEETS -------------------->
 
-    <script>
+    <!-- <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxxl0XmkkgNlXkUiGGhyGQ2IeY-3nq40dd1QfElzuc4nMp6kTHfuVA0x6XsJgCi1XVi/exec'
         const form = document.forms['submit-to-google-sheet']
       
@@ -857,7 +876,7 @@
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
         })
-      </script>
+      </script> -->
     <!-- <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxxl0XmkkgNlXkUiGGhyGQ2IeY-3nq40dd1QfElzuc4nMp6kTHfuVA0x6XsJgCi1XVi/exec'
         const form = document.forms['submit-to-google-sheet']
