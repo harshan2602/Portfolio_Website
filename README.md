@@ -56,7 +56,7 @@ Technologies used in the project:
 *   Git
 *   smtp.js
 
-## Contact Information
+## 📩 Contact Information
 
 If you have any questions, suggestions, or just want to get in touch, you can reach us at:
 
