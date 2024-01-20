@@ -1,4 +1,4 @@
-<h1 align="center" id="title">Personal Portfolio Website</h1>
+<h1 id="title">Personal Portfolio Website</h1>
 
 <p align="center"><img src="https://socialify.git.ci/harshan2602/Portfolio_Website/image?font=Inter&amp;forks=1&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Floating%20Cogs&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
 
@@ -55,3 +55,12 @@ Technologies used in the project:
 *   Figma
 *   Git
 *   smtp.js
+
+## Contact Information
+
+If you have any questions, suggestions, or just want to get in touch, you can reach us at:
+
+- Email: [harshan2602@gmail.com](mailto:harshan2602@gmail.com)
+- LinkedIn: [Harshan Selvakumar](https://www.linkedin.com/in/harshan2602/)
+
+I appreciate your interest and look forward to your contributions and feedback!
