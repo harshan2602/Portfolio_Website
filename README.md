@@ -10,7 +10,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://snipboard.io/esYpRv.jpg" alt="project-screenshot" width="400" height="350/">
+<img src="https://snipboard.io/esYpRv.jpg" alt="project-screenshot" width="400" height="300/">
 
 <img src="https://snipboard.io/6025U9.jpg" alt="project-screenshot" width="500">
 
